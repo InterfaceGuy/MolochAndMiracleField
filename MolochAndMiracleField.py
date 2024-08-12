@@ -44,10 +44,16 @@ class DomesticatedMind3D(CustomObject):
 class MolochAndMiracleField(CustomObject):
         
     def specify_parts(self):
-        pass
+        moloch_controller = Null(name="MolochController")
+        miracle_controller = Null(name="MiracleController")
+        neutral_field = Group(name="NeutralField")
+        moloch_field = Group(name="MolochField")
+        miracle_field = Group(name="MiracleField")
+        miracle_cloner = Cloner(name="MiracleCloner")
+        miracle_mospline = Mospline(name="MiracleMospline")
 
 
 
 if __name__ == "__main__":
     #moloch_and_miracle_field = MolochAndMiracleField()
-    connection = Connection(turbulence=True)
+    #connection = Connection(turbulence=True)
